@@ -32,7 +32,7 @@ COPY . .
 
 ## Build the angular app in production mode and store the artifacts in dist folder
 
-RUN $(npm bin)/ng build --prod
+## RUN $(npm bin)/ng build --prod
 
 
 
@@ -65,3 +65,5 @@ COPY --from=builder /ng-app/dist /usr/share/nginx/html
 
 
 CMD ["nginx", "-g", "daemon off;"]
+
+
