@@ -4,7 +4,7 @@
 
 # We label our stage as 'builder'
 
-FROM node:9-alpine as builder
+FROM node:11-alpine
 
 
 
